@@ -2,7 +2,9 @@
 title: "Test"
 author: "charlottegreenall"
 date: "21/01/2022"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -36,6 +38,8 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 In this section I decided to use data from blah blah
 #want to see not run use r, eval = FALSE, echo FALSE (hides the code true lets us see the code)
+#make it add figure captions using fig.captions
+#library (here) when you want to put your data into Rmarkdown and it can't find it. 
 ```{r}
 x <- 1:100
 y <- rnorm(100)
